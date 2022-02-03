@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1440px;
+    background-color: hsl(217, 54%, 11%);
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80vh;
+    width: 375px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 30px; 
+}
+
+.pic-bg {
+    position: relative;
+    height: 40vh;
+    width: 90%;
+    margin: 5% auto;
+    background-image: url(../img/image-equilibrium.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color .2s;
+    opacity: 1;
+}
+
+ .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50px;
+    width: 50px; 
+ }
+
+ .icon i {
+    height: 50px;
+    width: 50px;
+    font-size: 40px;
+    color:white;
+    visibility: hidden;
+    transition: .1s;
+ }
+
+.pic-bg:hover {
+    background-image: url(../img/image-equilibrium.jpg);
+    opacity: 0.5;
+    background-color: hsl(178, 100%, 50%);
+    background-blend-mode: lighten;
+}
+
+.pic-bg:hover > .icon i{
+    visibility: visible;
+}
+
+.text {
+    position: relative;
+    height: 22vh;
+    margin: 0px 5%;
+    font-family: 'Outfit', sans-serif;
+}
+
+.text h1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+
+.text h1:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.text p {
+    margin: 15px 0px;
+    font-size: 18px;
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+}
+
+.icons {
+    margin: 5% 0px;
+}
+
+.container {
+    display: inline-block;
+    height: 30px;
+    width: 100%;
+}
+
+.fas{ 
+    font-size: 15px;
+    color: hsl(178, 100%, 50%);
+    float: left;
+}
+.fas p {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: hsl(178, 100%, 50%);
+    text-transform: uppercase;
+ }
+
+ .far {
+     font-size: 15px;
+     color: hsl(215, 51%, 70%);
+     float: right;
+ }
+
+ .far p {
+     display: inline-block;
+     margin-left:10px;
+     font-size: 15px;
+ }
+
+ hr {
+     position: relative;
+     margin:2px 5%;
+     color: hsl(215, 32%, 27%);
+ }
+
+ .footer {
+     position: relative;
+     height: 12vh;
+ }
+
+ .pic {
+     position: absolute;
+     height: 50px;
+     width: 50px;
+     float: left;
+     margin: 10px 5%;
+     background-image: url(../img/image-avatar.png);
+     background-size:contain;
+     background-repeat: no-repeat;
+     background-position: left; 
+     border: 2px solid white;
+     border-radius: 50%;
+ }
+
+ .footer p {
+    display: inline-block;
+    margin:30px 90px;
+    color: hsl(215, 51%, 70%);
+    font-size: 15px;
+    letter-spacing: 1px;
+ }
+
+ .footer span {
+     color: white;
+     cursor: pointer;
+ }
+
+ .footer span:hover {
+     color: hsl(178, 100%, 50%);
+ }
