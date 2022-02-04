@@ -103,7 +103,7 @@ main {
     color: hsl(178, 100%, 50%);
     float: left;
 }
-.fas p {
+.fas span {
     display: inline-block;
     margin-left: 5px;
     font-size: 15px;
@@ -118,7 +118,7 @@ main {
      float: right;
  }
 
- .far p {
+ .far span {
      display: inline-block;
      margin-left:10px;
      font-size: 15px;
